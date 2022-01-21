@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/style.default.css">
+    <!-- Price Slider Stylesheets -->
+    <link rel="stylesheet" href="vendor/nouislider/nouislider.css">
+    <!-- Google fonts - Playfair Display-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700">
+    <!-- Google fonts - Poppins-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,700">
+    <!-- swiper-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+    <!-- Magnigic Popup-->
+    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
+    <!-- Leaflet Maps-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script>
+        var debug = 0;
+        var isMobile = false
+    </script>
+    <title>mywanderlust</title>
+
+    <!-- Facebook Pixel Code -->    
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '633650843689049');
+        fbq('init', '142951026237958');
+        fbq('track', 'PageView');
+      </script>
+      <noscript>
+          <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=633650843689049&ev=PageView&noscript=1"/>
+          <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=142951026237958&ev=PageView&noscript=1"/>
+      </noscript>
+  <!-- End Facebook Pixel Code -->
+
+  <!-- GA Code -->
+  <script>
+      (function(i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r;
+          i[r] = i[r] || function() {
+              (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+          a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+          a.async = 1;
+          a.src = g;
+          m.parentNode.insertBefore(a, m)
+      })(window, document, 'script',
+              'https://www.google-analytics.com/analytics.js', 'ga');
+  
+      ga('create', 'UA-89245018-1', 'auto');
+      
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-813387505"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'AW-813387505');
+  </script>
+  
+  
+  
+      <script>
+          window._browsee = window._browsee || function () { (_browsee.q = _browsee.q || []).push(arguments) };
+          _browsee('init', '86a7c607408797dbe38643160716f5c505af29343c9de732');
+          console.log("Browsee");
+          
+          function tag_anon(anon_user){
+              console.log('tag_anon', anon_user.anon_id, {displayName: anon_user.name, email:anon_user.email, anon:true})
+              _browsee('identify', anon_user.anon_id, {'$tags': ["anon"]})
+          }
+      </script>
+
+
+
+      <script async src='https://cdn.browsee.io/js/browsee.min.js'></script>
+</head>
+<body>
+    <header class="header">
+        <!-- Navbar-->
+        <nav class="navbar navbar-expand-lg shadow navbar-light bg-white" >
+            <div class="container-fluid">
+                <div class="d-flex align-items-center">
+                    <a class="navbar-brand py-1" href="#">
+                        <img src="https://da8qcmjpujrcg.cloudfront.net/static/travel/images/logo/mywanderlust_logo_dark.png" alt="MyWanderlust.in"
+                            height="32px">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="ratio ratio-21x9" >
+        <iframe width="100%" height="230px"
+          src="https://www.youtube.com/embed/vlDzYIIOYmM"
+          title="YouTube video"
+        ></iframe>
+      </div>
+      
+      
+
+
+      <div class="container-xxl px-3">
+        <div class="row">
+            <div class="col-lg-8 py-5 py-lg-6">
+                <!-- Overview -->
+                <section class="text-block row">
+                    <div class="text-start">
+                      
+                        <p class="subtitle text-secondary ">Packages <span class="subtitle">- Trekking</span></p>
+                        
+                        <h1 class="display-3 fw-bold text-shadow mb-4">Nag Tibba Trek</h1>
+                        <p class="subtitle text-justify mb-4">A weekend trek through thick forests, meadows and snow</p>
+                        <hr>
+                        <br> <br>
+                        <h5 class="display-7 fw-bold text-shadow mb-4">QUICK FACTS ABOUT NAG TIBBA PACKAGE</h5><br>
+                        <div class="alert alert-primary mb-3" role="alert">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 align-items-center mb-4 mb-lg-0">
+                                <h6 class="mb-0"><i class="far fa-calendar fa-fw text-primary me-2"></i>Duration</h6>
+                                <p class="mb-0">1N/2D</p>
+                            </div>
+                            <div class="col-12 col-lg-6 align-items-center text-start text-lg-end mb-4">
+                                <h6 class="mb-0"><i class="far fa-calendar fa-fw text-primary me-2"></i>Date</h6>
+                                <p class="mb-0">Easy<span class="text-muted">
+                            </div>
+                            <div class="col-12 col-lg-6 align-items-center mb-4 mb-lg-0">
+                                <h6 class="mb-0"><i class="fa fa-car fas me-2 text-primary"></i>transportation</h6>
+                                <p class="mb-0">Traveller</p>
+                            </div>
+                            <div class="col-12 col-lg-6 align-items-center text-start text-lg-end mb-4">
+                                <h6 class="mb-0"><i class="far 	fa fa-users fa-fw text-primary me-2"></i>Group Size</h6>
+                                <p class="mb-0">4<span class="text-muted"> - </span>
+                                    13</p>
+                            </div>
+                            <div class="col-12 col-lg-6 align-items-center mb-4 mb-lg-0">
+                                <h6 class="mb-0"><i class="fas fa-bed  me-2 text-primary"></i>Accomodation</h6>
+                                <p class="mb-0">Camps on sharing basis</p>
+                            </div>
+                             <div class="col-12 col-lg-6 align-items-center text-start text-lg-end mb-4">
+                                <h6 class="mb-0"><i class="fas 	fas fa-hotdog  fa-fw text-primary me-2"></i>Food Inclusions</h6>
+                                <p class="mb-0">Meals starting from day 1 lunch to day 2 lunch<span class="text-muted"> 
+                                    
+                            </div>
+                        </div>
+                        </div>
+                        
+                    </div>
+                </section>
+
+
+                <!-- Overview-->
+                <section class="text-block row">
+                    <div>
+                        <p class="subtitle text-secondary">2 days of pure joy</p>
+                        <h2>Overview</h2>
+                        
+                    </div>
+                    <!-- Schedule Swiper -->
+                    <div class="swiper-container swiper-init swiper-container-horizontal"
+                        data-swiper='{"watchOverflow":true, "autoHeight":true,"grabCursor":true, "slidesPerView":2.1,"spaceBetween":20,"loop":false,"roundLengths":true,"breakpoints":{"991":{"slidesPerView":1.1}},"pagination":{"el":".swiper-pagination","clickable":true,"dynamicBullets":true}, "navigation": {"nextEl":".swiper-button-next-bottom","prevEl":".swiper-button-prev-bottom"}}'>
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            
+                            <div class="swiper-slide h-auto pt-4 pb-5">
+                                <div class="card border-0 shadow">
+                                    <div class="card-header bg-gray-100 py-4 border-0">
+                                        <div class="d-flex align-items-center  justify-content-center">
+                                            <!-- <div class="date-tile me-3">
+                                                <div class="text-uppercase"><span class="text-sm">Day</span><br><strong
+                                                        class="text-lg">1</strong></div>
+                                            </div> -->
+                                            <div>
+                                                <!-- <p class="subtitle text-sm text-primary">Thursday</p> -->
+                                                <h4 class="mb-0">Join a Group</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="card-text" style="padding-inline-start: 1.2rem;">
+                                            
+                                            <p class="mb-3 ">This package is available everyday! You will be able to choose your dates when you book.</hp>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            <div class="swiper-slide h-auto pt-4 pb-5">
+                                <div class="card border-0 shadow">
+                                    <div class="card-header bg-gray-100 py-4 border-0">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <!-- <div class="date-tile me-3">
+                                                <div class="text-uppercase"><span class="text-sm">Day</span><br><strong
+                                                        class="text-lg">3</strong></div>
+                                            </div> -->
+                                            <div>
+                                                <!-- <p class="subtitle text-sm text-primary">Saturday</p> -->
+                                                <h4 class="mb-0">Inclusions</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="card-text" style="padding-inline-start: 1.2rem;">
+                                            
+                                            <li class="mb-3">Transport from Delhi to Dehradun by comfortable AC sleeper bus(if opted for) and Dehradun to Pantwari by tempo traveller and back.</li>
+                                            
+                                            <li class="mb-3">All veg meals starting from day 1 lunch to day 2 lunch.</li>
+                                            
+                                            <li class="mb-3">Certified Trek leader, guides and forest entry charges.</li>
+                                            
+                                            <li class="mb-3">Porter and mule support to carry camping equipment. </li>       
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide h-auto pt-4 pb-5">
+                                <div class="card border-0 shadow">
+                                    <div class="card-header bg-gray-100 py-4 border-0">
+                                        <div class="d-flex align-items-center  justify-content-center">
+                                            <!-- <div class="date-tile me-3">
+                                                <div class="text-uppercase"><span class="text-sm">Day</span><br><strong
+                                                        class="text-lg">1</strong></div>
+                                            </div> -->
+                                            <div>
+                                                <!-- <p class="subtitle text-sm text-primary">Thursday</p> -->
+                                                <h4 class="mb-0">Exclusions</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="card-text" style="padding-inline-start: 1.2rem;">
+                                            
+                                            <li class="mb-3 "> 5% GST on costing as per government regulations</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide h-auto pt-4 pb-5">
+                                <div class="card border-0 shadow">
+                                    <div class="card-header bg-gray-100 py-4 border-0">
+                                        <div class="d-flex align-items-center  justify-content-center">
+                                            <!-- <div class="date-tile me-3">
+                                                <div class="text-uppercase"><span class="text-sm">Day</span><br><strong
+                                                        class="text-lg">1</strong></div>
+                                            </div> -->
+                                            <div>
+                                                <!-- <p class="subtitle text-sm text-primary">Thursday</p> -->
+                                                <h4 class="mb-0">Itinerary</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="card-text" style="padding-inline-start: 1.2rem;">
+                                            <div class="alert alert-primary mb-4" role="alert">
+                                            <h6 class="mb-3 ">Day 1 : Dehradun - Pantwari - Kathian Base Camp</h6>
+                                            </div>
+
+                                            <div class="alert alert-primary mb-4" role="alert">
+                                            <h6 class="mb-3 ">Day 2 : Kathian - Nagtibba Summit - Dehradun</h6>
+                                        </div>
+                                        <div class="d-grid mb-2">
+                                            <a class="btn btn-primary" href="javascript:void(0)"
+                                                onclick="clicked_block_now();">See Detailed Itinerary</a>
+                                        </div>
+                                           
+                                            
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                        <button class="swiper-button-prev-bottom btn btn-sm btn-outline-primary">
+                            <i class="fas fa-chevron-left"></i>Previous
+                        </button>
+                        <button class="swiper-button-next-bottom btn btn-sm btn-outline-primary">
+                            Next<i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </section>
+
+
+
+                <!-- Gallery
+                <section class="text-block row">
+                    <div>
+                        <p class="subtitle text-secondary">What to expect</p>
+                        <h2 class="mb-0">Photos from last edition</h2>
+                        
+                    </div>
+                    <div class="swiper-container swiper-init swiper-container-horizontal slider-gallery"
+                        data-swiper='{"watchOverflow":true, "autoHeight":true,"grabCursor":true, "slidesPerView":"auto","spaceBetween":20,"loop":false,"roundLengths":true,"pagination":{"el":".swiper-pagination","clickable":true,"dynamicBullets":true}, "navigation": {"nextEl":".swiper-button-next-bottom","prevEl":".swiper-button-prev-bottom"}}'>
+                        Additional required wrapper -->
+                        <!-- <div class="swiper-wrapper"> -->
+                            <!-- Slides -->
+                            
+                            <!-- <div class="swiper-slide w-auto h-auto pt-4 pb-5">
+                                <div class="rounded overflow-hidden">
+                                    <a href="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/1_fhd.jpg"
+                                        title=""><img
+                                            class="img-fluid swiper-auto-slides-gallery-landscape"
+                                            src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/1_t.jpg"
+                                            alt="..."></a>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide w-auto h-auto pt-4 pb-5">
+                                <div class="rounded overflow-hidden">
+                                    <a href="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/vibe-manzareaam_fCwLYHk_fhd.jpeg"
+                                        title=""><img
+                                            class="img-fluid swiper-auto-slides-gallery-landscape"
+                                            src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/vibe-manzareaam_fCwLYHk_t.jpeg"
+                                            alt="..."></a>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide w-auto h-auto pt-4 pb-5">
+                                <div class="rounded overflow-hidden">
+                                    <a href="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/manzar-e-aam-swarveda_3WQGLnC_fhd.jpg"
+                                        title=""><img
+                                            class="img-fluid swiper-auto-slides-gallery-landscape"
+                                            src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/manzar-e-aam-swarveda_3WQGLnC_t.jpg"
+                                            alt="..."></a>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide w-auto h-auto pt-4 pb-5">
+                                <div class="rounded overflow-hidden">
+                                    <a href="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/3_fhd.jpg"
+                                        title=""><img
+                                            class="img-fluid swiper-auto-slides-gallery-landscape"
+                                            src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/3_t.jpg"
+                                            alt="..."></a>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide w-auto h-auto pt-4 pb-5">
+                                <div class="rounded overflow-hidden">
+                                    <a href="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/4_JaO43AJ_fhd.jpg"
+                                        title=""><img
+                                            class="img-fluid swiper-auto-slides-gallery-landscape"
+                                            src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/4_JaO43AJ_t.jpg"
+                                            alt="..."></a>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide w-auto h-auto pt-4 pb-5">
+                                <div class="rounded overflow-hidden">
+                                    <a href="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/5_Wrgx8fs_fhd.jpg"
+                                        title=""><img
+                                            class="img-fluid swiper-auto-slides-gallery-landscape"
+                                            src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/5_Wrgx8fs_t.jpg"
+                                            alt="..."></a>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide w-auto h-auto pt-4 pb-5">
+                                <div class="rounded overflow-hidden">
+                                    <a href="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/6_fhd.jpg"
+                                        title=""><img
+                                            class="img-fluid swiper-auto-slides-gallery-landscape"
+                                            src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/6_t.jpg"
+                                            alt="..."></a>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide w-auto h-auto pt-4 pb-5">
+                                <div class="rounded overflow-hidden">
+                                    <a href="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/manzar-e-aam-vibe_xMNCXA8_fhd.jpg"
+                                        title=""><img
+                                            class="img-fluid swiper-auto-slides-gallery-landscape"
+                                            src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/manzar-e-aam-vibe_xMNCXA8_t.jpg"
+                                            alt="..."></a>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide w-auto h-auto pt-4 pb-5">
+                                <div class="rounded overflow-hidden">
+                                    <a href="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/7_fhd.jpg"
+                                        title=""><img
+                                            class="img-fluid swiper-auto-slides-gallery-landscape"
+                                            src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/7_t.jpg"
+                                            alt="..."></a>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide w-auto h-auto pt-4 pb-5">
+                                <div class="rounded overflow-hidden">
+                                    <a href="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/2_osOWK6k_fhd.jpg"
+                                        title=""><img
+                                            class="img-fluid swiper-auto-slides-gallery-landscape"
+                                            src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/2_osOWK6k_t.jpg"
+                                            alt="..."></a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                         If we need pagination -->
+                        <!-- <div class="swiper-pagination"></div>
+                        <button class="swiper-button-prev-bottom btn btn-sm btn-outline-primary">
+                            <i class="fas fa-chevron-left"></i>Previous
+                        </button>
+                        <button class="swiper-button-next-bottom btn btn-sm btn-outline-primary">
+                            Next<i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </section> --> 
+                
+                
+                
+                <!-- Artists -->
+                <section class="text-block row">
+                    <div>
+                        <p class="subtitle mb-2 text-secondary">Discover New journey</p>
+                        <h2 class="mb-2">Detailed Itinerary</h2>
+                        
+                        
+                        
+                    </div>
+                    <!-- Slider main container -->
+                    <div class="swiper-container swiper-init swiper-container-horizontal"
+                        data-swiper='{"watchOverflow":true,"autoHeight":true, "grabCursor":true, "slidesPerView":2.1,"spaceBetween":20,"loop":false,"roundLengths":true,"breakpoints":{"991":{"slidesPerView":1.1}},"pagination":{"el":".swiper-pagination","clickable":true,"dynamicBullets":true}, "navigation": {"nextEl":".swiper-button-next-bottom","prevEl":".swiper-button-prev-bottom"}}'>
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper mx-3">
+                            <!-- Slides -->
+                            
+                            <div class="swiper-slide h-auto pt-4 pb-5">
+                                
+                                <div class="ribbon ribbon-primary text-xs" style="top:35px">69 lakh+ views on YouTube</div>
+                                
+                                <div class="w-100 h-100">
+                                    <div class="card h-100 border-0 shadow">
+                                        <div class="card-img-top overflow-hidden ratio ratio-1x1">
+                                            <img class="img-fluid"
+                                                src="/photo/photo-1471189641895-16c58a695bcb.jpg"
+                                                alt="img">
+                                            
+                                        </div>
+                                        <div class="card-body d-flex align-items-center">
+                                            <div class="w-100">
+                                                <h4 class="card-title text-primary">Dehradun - Pantwari
+                                                </h4>
+                                                <p class="card-title text-dark text-sm">kathian Base Camp</p>
+                                                <a class="text-muted text-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#Dehradun">
+                                                    See details
+                                                    <i class="fas fa-angle-double-right ms-2"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide h-auto pt-4 pb-5">
+                                
+                                <div class="ribbon ribbon-primary text-xs" style="top:35px">66 lakh+ views on YouTube</div>
+                                
+                                <div class="w-100 h-100">
+                                    <div class="card h-100 border-0 shadow">
+                                        <div class="card-img-top overflow-hidden ratio ratio-1x1">
+                                            <img class="img-fluid"
+                                                src="/photo/photo-1449034446853-66c86144b0ad.jpg"
+                                                alt="img">
+                                            
+                                        </div>
+                                        <div class="card-body d-flex align-items-center">
+                                            <div class="w-100">
+                                                <h4 class="card-title text-primary">Kathian - Nagtibba Summit </h4>
+                                                </h4>
+                                                <p class="card-title text-dark text-sm"> Dehradun</p>
+                                                <a class="text-muted text-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#artistModal-Kathian">
+                                                    See details
+                                                    <i class="fas fa-angle-double-right ms-2"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide h-auto pt-4 pb-5">
+                                
+                                <div class="ribbon ribbon-primary text-xs" style="top:35px">62 lakh+ views on YouTube</div>
+                                
+                                <div class="w-100 h-100">
+                                    <div class="card h-100 border-0 shadow">
+                                        <div class="card-img-top overflow-hidden ratio ratio-1x1">
+                                            <img class="img-fluid"
+                                                src="/photo/photo-1505245208761-ba872912fac0.jpg"
+                                                alt="img">
+                                            
+                                        </div>
+                                        <div class="card-body d-flex align-items-center">
+                                            <div class="w-100">
+                                                <h4 class="card-title text-primary">Dehradun </h4>
+                                                </h4>
+                                                <p class="card-title text-dark text-sm"> Pantwari Soak</p>
+                                                <a class="text-muted text-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#artistModal-Pantwari">
+                                                    See details
+                                                    <i class="fas fa-angle-double-right ms-2"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                        <button class="swiper-button-prev-bottom btn btn-sm btn-outline-primary">
+                            <i class="fas fa-chevron-left"></i>Previous
+                        </button>
+                        <button class="swiper-button-next-bottom btn btn-sm btn-outline-primary">
+                            Next<i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <!-- Artist modal -->
+                    
+                    <div class="modal fade" id="Dehradun"
+                        tabindex="-1" aria-labelledby="artistModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="artistModalLabel">Dehradun - Pantwari</h5>
+
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    80 km drive(3 hours) and 6 km trek(4 hours, mostly uphill)<br>
+
+Arrive at Dehradun Bus/Railway station, where we will be available to greet you at 6:30 a.m.<br>
+
+From here we will start our journey towards pantwari through the hills of beautiful hill station Mussoorie, we will reach Pantwari at around 10:00 to 11:00 a.m., this the point where your trek begins.<br>
+
+The journey will start after a small safety briefing and will take you approximately 4 hrs to reach Kathian Meadow (base camp for the night) through the beautiful jungle of cedar and rhododendron.<br>
+
+
+
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal fade" id="artistModal-Kathian"
+                        tabindex="-1" aria-labelledby="artistModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="artistModalLabel">Kathian-Nadtibba summit</h5>
+
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    80 km drive(3 hours) and 16 km trek(8 hours, mostly downhill) <br>
+                                    Good Morning, feel the fresh and welcoming morning mountain sun! <br>
+                                    We wrap things up today from Kathian and start our trek to the summit, the trek, we promise shall be nature filled with beautiful rhododendron forests as your surroundings. <br>
+                                    Dont worry about the steepness, for it shall lead you to the best. On arrival at the summit enjoy the 360-degree view of Bandarpoonch Peak, the Gangotri group of peaks, Kedarnath peak in the north, Doon valley and the snow peaks of Chanabang Himalayas.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     
+                    <div class="modal fade" id="artistModal-Pantwari"
+                        tabindex="-1" aria-labelledby="artistModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="artistModalLabel">Kathian-Nadtibba summit</h5>
+
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    40 km drive(2 hours) and 26 km trek(10 hours, mostly downhill) <br>
+                                    Good Morning, feel the fresh and welcoming morning mountain sun! <br>
+                                    We wrap things up today from Kathian and start our trek to the summit, the trek, we promise shall be nature filled with beautiful rhododendron forests as your surroundings. <br>
+                                    Dont worry about the steepness, for it shall lead you to the best. On arrival at the summit enjoy the 360-degree view of Bandarpoonch Peak, the Gangotri group of peaks, Kedarnath peak in the north, Doon valley and the snow peaks of Chanabang Himalayas.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+
+
+                    
+                </section>
+                <!-- Contact-->
+                <section class="text-block row d-md-none">
+                    <div>
+                        <p class="subtitle text-secondary">Still Got Questions?</p>
+                        <h2 class="mb-2">Contact Us</h2>
+                        <!-- <p class="mt-2 mb-2">Send us a whatsapp or call us on
+                            <br>
+                            <span class="h6 text-primary">+91 9654533535</span>
+                        </p> -->
+                        <div class="row">
+                            <div class="col-auto"><a href="javascript:void(0)"
+                                onclick="clicked_whatsapp('9654533535');" class="btn btn-light text-success col-auto"><i class="fab fa-whatsapp" aria-hidden="true"></i> Whatsapp</a></div>
+                            <div class="col-auto"><a href="javascript:void(0)"
+                                onclick="clicked_call('9654533535');" class="btn btn-light text-success col-auto"><i class="fas fa-phone-alt"></i> Call</a></div>
+                        </div>
+                    </div>
+                </section>
+                
+                
+                
+                            
+                            
+                
+                
+                <!-- Date & Schedule -->
+                <section class="text-block row">
+                    <div>
+                        <p class="subtitle text-secondary">2 days of pure joy</p>
+                        <h2>Schedule</h2>
+                        
+                    </div>
+                    <!-- Schedule Swiper -->
+                    <div class="swiper-container swiper-init swiper-container-horizontal"
+                        data-swiper='{"watchOverflow":true, "autoHeight":true,"grabCursor":true, "slidesPerView":2.1,"spaceBetween":20,"loop":false,"roundLengths":true,"breakpoints":{"991":{"slidesPerView":1.1}},"pagination":{"el":".swiper-pagination","clickable":true,"dynamicBullets":true}, "navigation": {"nextEl":".swiper-button-next-bottom","prevEl":".swiper-button-prev-bottom"}}'>
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            
+                            <div class="swiper-slide h-auto pt-4 pb-5">
+                                <div class="card border-0 shadow">
+                                    <div class="card-header bg-gray-100 py-4 border-0">
+                                        <div class="d-flex align-items-center justify-content-start">
+                                            <div class="date-tile me-3">
+                                                <div class="text-uppercase"><span class="text-sm">Day</span><br><strong
+                                                        class="text-lg">1</strong></div>
+                                            </div>
+                                            <div>
+                                                <p class="subtitle text-sm text-primary">Thursday</p>
+                                                <h4 class="mb-0">20 January 2022</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="card-text" style="padding-inline-start: 1.2rem;">
+                                            
+                                            <li class="mb-3">80 km drive(3 hours) and 6 km trek(4 hours, mostly uphill)</li>
+                                            
+                                            <li class="mb-3">Arrive at Dehradun Bus/Railway station, where we will be available to greet you at 6:30 a.m.</li>
+                                            
+                                            <li class="mb-3">From here we will start our journey towards pantwari through the hills of beautiful hill station Mussoorie, we will reach Pantwari at around 10:00 to 11:00 a.m., this the point where your trek begins.</li>
+                                            
+                                            <li class="mb-3">The journey will start after a small safety briefing and will take you approximately 4 hrs to reach Kathian Meadow (base camp for the night) through the beautiful jungle of cedar and rhododendron.</li>
+
+                                            <li class="mb-3">Hereafter arrival, Unpack, unwind and inhale the freshness that cities cant afford for you, post allotment of the camps fill your bellies with a luscious meal after which you are free to explore local surrounding and to acclimatize.</li>
+
+                                            <li class="mb-3">Enjoy the evening bonfire, with soup and popcorn and spend cosy night at the base camp, Kathian Meadows.</li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide h-auto pt-4 pb-5">
+                                <div class="card border-0 shadow">
+                                    <div class="card-header bg-gray-100 py-4 border-0">
+                                        <div class="d-flex align-items-center justify-content-start">
+                                            <div class="date-tile me-3">
+                                                <div class="text-uppercase"><span class="text-sm">Day</span><br><strong
+                                                        class="text-lg">2</strong></div>
+                                            </div>
+                                            <div>
+                                                <p class="subtitle text-sm text-primary">Friday</p>
+                                                <h4 class="mb-0">21 January 2022</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="card-text" style="padding-inline-start: 1.2rem;">
+                                            
+                                            <li class="mb-3">80 km drive(3 hours) and 16 km trek(8 hours, mostly downhill) </li>
+                                            
+                                            <li class="mb-3">Good Morning, feel the fresh and welcoming morning mountain sun!</li>
+                                            
+                                            <li class="mb-3">We wrap things up today from Kathian and start our trek to the summit, the trek, we promise shall be nature filled with beautiful rhododendron forests as your surroundings.</li>
+                                            
+                                            <li class="mb-3">Dont worry about the steepness, for it shall lead you to the best. On arrival at the summit enjoy the 360-degree view of Bandarpoonch Peak, the Gangotri group of peaks, Kedarnath peak in the north, Doon valley and the snow peaks of Chanabang Himalayas.</li>
+                                            
+                                            <li class="mb-3">After spending some time at the Nagtibba top, we descend back to our base camp Kathiyan where we will halt for a while and have our lunch.</li>
+
+                                            <li class="mb-3">After a delicious meal, we will start to step down towards Pantwari and reach there by 4:00 p.m.
+                                            </li>
+
+                                            <li class="mb-3">Depart from Pantwari - Dehradun with memories to cherish for! Reach Dehradun by 7 p.m.
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide h-auto pt-4 pb-5">
+                                <div class="card border-0 shadow">
+                                    <div class="card-header bg-gray-100 py-4 border-0">
+                                        <div class="d-flex align-items-center justify-content-start">
+                                            <div class="date-tile me-3">
+                                                <div class="text-uppercase"><span class="text-sm">Day</span><br><strong
+                                                        class="text-lg">3</strong></div>
+                                            </div>
+                                            <div>
+                                                <p class="subtitle text-sm text-primary">Saturday</p>
+                                                <h4 class="mb-0">22 January 2022</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="card-text" style="padding-inline-start: 1.2rem;">
+                                            
+                                            <li class="mb-3">Wake up early to witness the sunrise and warm up to start our trek to Bhalu Gaad Waterfalls (6 km from the resort) at 7 AM.</li>
+                                            
+                                            <li class="mb-3">It’s time to learn something new. Join us for workshops which starts at 11 AM.</li>
+                                            
+                                            <li class="mb-3">At 2:30 PM, we will start the open mic. Every attendee will get 10 minutes to showcase their talent on stage. We need more independent artists for the next edition, so we hope to see you perform.</li>
+                                            
+                                            <li class="mb-3">The performances will happen from 5 PM to 10 PM. </li>
+                                            
+                                            <li class="mb-3">Performances stop at 10 PM but the energy doesn’t. Let’s gather around bonfires to jam, make friends and memories.</li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                        <button class="swiper-button-prev-bottom btn btn-sm btn-outline-primary">
+                            <i class="fas fa-chevron-left"></i>Previous
+                        </button>
+                        <button class="swiper-button-next-bottom btn btn-sm btn-outline-primary">
+                            Next<i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </section>
+                
+                
+                <!-- Venue -->
+                <!-- <section class="text-block row">
+                    <div>
+                        <p class="subtitle text-secondary">Luxury at its best</p>
+                        <h2 class="mb-0">Venue</h2>
+                        
+                        <p class="mt-2">The festival will happen at <strong>Diganta Resort</strong>, one of the finest resorts in Mukteshwar.</p>
+                        
+                        
+                        <div class="row mt-4">
+                            
+                            <div class="col-lg-6">
+                                <ul class="list-unstyled mb-3">
+                                    <li class="mb-0">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div
+                                                class="icon-rounded icon-rounded-sm bg-secondary-light flex-shrink-0 me-4">
+                                                <i class="fa fas fa-hotel text-secondary fa-fw text-center"></i>
+                                            </div>
+                                            <div><span class="text-sm">5 star luxury resort</span></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <ul class="list-unstyled mb-3">
+                                    <li class="mb-0">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div
+                                                class="icon-rounded icon-rounded-sm bg-secondary-light flex-shrink-0 me-4">
+                                                <i class="fas fa-swimming-pool text-secondary fa-fw text-center"></i>
+                                            </div>
+                                            <div><span class="text-sm">Heated Swimming Pool</span></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <ul class="list-unstyled mb-3">
+                                    <li class="mb-0">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div
+                                                class="icon-rounded icon-rounded-sm bg-secondary-light flex-shrink-0 me-4">
+                                                <i class="fas fa-spa text-secondary fa-fw text-center"></i>
+                                            </div>
+                                            <div><span class="text-sm">Spa and Sauna</span></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <ul class="list-unstyled mb-3">
+                                    <li class="mb-0">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div
+                                                class="icon-rounded icon-rounded-sm bg-secondary-light flex-shrink-0 me-4">
+                                                <i class="fas fa-hot-tub text-secondary fa-fw text-center"></i>
+                                            </div>
+                                            <div><span class="text-sm">6 Person Jacuzzi</span></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-container swiper-init swiper-container-horizontal slider-gallery"
+                        data-swiper='{"watchOverflow":true, "autoHeight":true,"grabCursor":true, "slidesPerView":"auto","spaceBetween":20,"loop":false,"roundLengths":true,"pagination":{"el":".swiper-pagination","clickable":true,"dynamicBullets":true}, "navigation": {"nextEl":".swiper-button-next-bottom","prevEl":".swiper-button-prev-bottom"}}'> -->
+                        <!-- Additional required wrapper -->
+                        <!-- <div class="swiper-wrapper"> -->
+                            <!-- Slides -->
+<!--                             
+                            <div class="swiper-slide w-auto h-auto pt-4 pb-5">
+                                <div class="rounded overflow-hidden">
+                                    <a href="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/1_NBlqsnL_fhd.jpg"
+                                        title=""><img
+                                            class="img-fluid swiper-auto-slides-gallery-landscape"
+                                            src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/1_NBlqsnL_t.jpg"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide w-auto h-auto pt-4 pb-5">
+                                <div class="rounded overflow-hidden">
+                                    <a href="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/2_QsGRjTc_fhd.jpg"
+                                        title=""><img
+                                            class="img-fluid swiper-auto-slides-gallery-landscape"
+                                            src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/2_QsGRjTc_t.jpg"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide w-auto h-auto pt-4 pb-5">
+                                <div class="rounded overflow-hidden">
+                                    <a href="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/3_WLDSdhC_fhd.jpg"
+                                        title=""><img
+                                            class="img-fluid swiper-auto-slides-gallery-landscape"
+                                            src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/3_WLDSdhC_t.jpg"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide w-auto h-auto pt-4 pb-5">
+                                <div class="rounded overflow-hidden">
+                                    <a href="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/4_3pmQY4J_fhd.jpg"
+                                        title=""><img
+                                            class="img-fluid swiper-auto-slides-gallery-landscape"
+                                            src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/4_3pmQY4J_t.jpg"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide w-auto h-auto pt-4 pb-5">
+                                <div class="rounded overflow-hidden">
+                                    <a href="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/5_eITLKxC_fhd.jpg"
+                                        title=""><img
+                                            class="img-fluid swiper-auto-slides-gallery-landscape"
+                                            src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/5_eITLKxC_t.jpg"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide w-auto h-auto pt-4 pb-5">
+                                <div class="rounded overflow-hidden">
+                                    <a href="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/2_MHYJLiy_fhd.jpg"
+                                        title=""><img
+                                            class="img-fluid swiper-auto-slides-gallery-landscape"
+                                            src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/2_MHYJLiy_t.jpg"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide w-auto h-auto pt-4 pb-5">
+                                <div class="rounded overflow-hidden">
+                                    <a href="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/3_fhd.JPG"
+                                        title=""><img
+                                            class="img-fluid swiper-auto-slides-gallery-landscape"
+                                            src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/3_t.JPG"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide w-auto h-auto pt-4 pb-5">
+                                <div class="rounded overflow-hidden">
+                                    <a href="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/5_AE9U5Qu_fhd.jpg"
+                                        title=""><img
+                                            class="img-fluid swiper-auto-slides-gallery-landscape"
+                                            src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/5_AE9U5Qu_t.jpg"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                            
+                        </div> -->
+                        <!-- If we need pagination -->
+                        <!-- <div class="swiper-pagination"></div>
+                        <button class="swiper-button-prev-bottom btn btn-sm btn-outline-primary">
+                            <i class="fas fa-chevron-left"></i>Previous
+                        </button>
+                        <button class="swiper-button-next-bottom btn btn-sm btn-outline-primary">
+                            Next<i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div> -->
+                    
+                        <p class="mt-4"><strong>Reviews for Digaanta on the web</strong></p>
+                        <div class="row">
+                            
+                            <div class="col-lg-6 position-relative mb-3">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-auto d-flex align-items-center">
+                                            <img style="height:48px; width:48px;"
+                                                                src="https://da8qcmjpujrcg.cloudfront.net/static/travel/icons/hotels/google-maps.png"
+                                                                alt="Google Maps">
+                                        </div>
+                                        <div class="col">
+                                            <div class="row"><p class="mb-0"><strong>Google Maps</strong><i class="fas fa-external-link-alt mx-1"></i><span class="text-muted text-xs"> 113 Reviews</span></p></div>
+                                            <div class="row">
+                                                <p class="mb-0">4.4 
+                                                    
+                                                        <i class="fas fa-star text-warning"></i>
+                                                    
+                                                    
+                                                    
+                                                        <i class="fas fa-star text-warning"></i>
+                                                    
+        
+                                                    
+                                                        <i class="fas fa-star text-warning"></i>
+                                                    
+        
+                                                    
+                                                        <i class="fas fa-star text-warning"></i>
+                                                    
+        
+                                                    
+                                                        <i class="fas fa-star-half-alt text-warning"></i>
+                                                    
+                                                </p>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="a-fill-parent" href="https://goo.gl/maps/QqDwnzuAA4FSdC3T7"></a>
+                            </div>
+                            
+                            <div class="col-lg-6 position-relative mb-3">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-auto d-flex align-items-center">
+                                            <img style="height:48px; width:48px;"
+                                                                src="https://da8qcmjpujrcg.cloudfront.net/static/travel/icons/hotels/tripadvisor.png"
+                                                                alt="Tripadvisor">
+                                        </div>
+                                        <div class="col">
+                                            <div class="row"><p class="mb-0"><strong>Tripadvisor</strong><i class="fas fa-external-link-alt mx-1"></i><span class="text-muted text-xs"> 49 Reviews</span></p></div>
+                                            <div class="row">
+                                                <p class="mb-0">5 
+                                                    
+                                                        <i class="fas fa-star text-warning"></i>
+                                                    
+                                                    
+                                                    
+                                                        <i class="fas fa-star text-warning"></i>
+                                                    
+        
+                                                    
+                                                        <i class="fas fa-star text-warning"></i>
+                                                    
+        
+                                                    
+                                                        <i class="fas fa-star text-warning"></i>
+                                                    
+        
+                                                    
+                                                        <i class="fas fa-star text-warning"></i>
+                                                    
+                                                </p>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="a-fill-parent" href="https://www.tripadvisor.in/Hotel_Review-g2691910-d17373626-Reviews-Digantaa_Resort-Dhanachuli_Nainital_District_Uttarakhand.html"></a>
+                            </div>
+                            
+                        </div>
+                    
+                </section>
+                
+                
+                <!-- Rooms -->
+                <!-- <section class="text-block row">
+                    <div>
+                        <p class="subtitle text-secondary">Clean and spacious rooms</p>
+                        <h2 class="mb-4">Accommodation</h2>
+                        
+                        <p>We believe staying at the venue is the best way to enjoy the festival. Even though the performances stop at 10PM, jamming sessions and the lively environment generally never stops. We bet that you will take home a new favourite artist!<br><br>What’s better than finding a new favourite? Meeting and getting to know them! Unlike most other events, you will be able to get to know them as everyone will be sharing the same roof!</p>
+                        
+                        
+                    </div>
+                    <div class="swiper-container swiper-init swiper-container-horizontal slider-gallery"
+                        data-swiper='{"watchOverflow":true, "autoHeight":true,"grabCursor":true, "slidesPerView":"auto","spaceBetween":20,"loop":false,"roundLengths":true,"pagination":{"el":".swiper-pagination","clickable":true,"dynamicBullets":true}, "navigation": {"nextEl":".swiper-button-next-bottom","prevEl":".swiper-button-prev-bottom"}}'> -->
+                        <!-- Additional required wrapper -->
+                        <!-- <div class="swiper-wrapper"> -->
+                            <!-- Slides -->
+                            
+                            <!-- <div class="swiper-slide w-auto h-auto pt-4 pb-5">
+                                <div class="rounded overflow-hidden">
+                                    <a href="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/1_5ItmZcP_fhd.jpg"
+                                        title=""><img
+                                            class="img-fluid swiper-auto-slides-gallery-landscape"
+                                            src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/1_5ItmZcP_t.jpg"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide w-auto h-auto pt-4 pb-5">
+                                <div class="rounded overflow-hidden">
+                                    <a href="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/_W6A9464_fhd.JPG"
+                                        title=""><img
+                                            class="img-fluid swiper-auto-slides-gallery-landscape"
+                                            src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/_W6A9464_t.JPG"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide w-auto h-auto pt-4 pb-5">
+                                <div class="rounded overflow-hidden">
+                                    <a href="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/2_fhd.JPG"
+                                        title=""><img
+                                            class="img-fluid swiper-auto-slides-gallery-landscape"
+                                            src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/2_t.JPG"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                            
+                        </div> -->
+                        <!-- If we need pagination -->
+                        <!-- <div class="swiper-pagination"></div>
+                        <button class="swiper-button-prev-bottom btn btn-sm btn-outline-primary">
+                            <i class="fas fa-chevron-left"></i>Previous
+                        </button>
+                        <button class="swiper-button-next-bottom btn btn-sm btn-outline-primary">
+                            Next<i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </section> -->
+                
+                
+                <!-- Activities -->
+                <!-- <section class="text-block row">
+                    <div>
+                        <p class="subtitle text-secondary">What else can I do?</p>
+                        <h2 class="mb-0">Sightseeing around the venue</h2>
+                        
+                    </div> -->
+                    <!-- Slider main container -->
+                    <!-- <div class="swiper-container swiper-init swiper-container-horizontal"
+                        data-swiper='{"watchOverflow":true,"autoHeight":true, "grabCursor":true, "slidesPerView":2.1,"spaceBetween":20,"loop":false,"roundLengths":true,"breakpoints":{"991":{"slidesPerView":1.1}},"pagination":{"el":".swiper-pagination","clickable":true,"dynamicBullets":true}, "navigation": {"nextEl":".swiper-button-next-bottom","prevEl":".swiper-button-prev-bottom"}}'> -->
+                        <!-- Additional required wrapper -->
+                        <!-- <div class="swiper-wrapper"> -->
+                            <!-- Slides -->
+                            
+                            <!-- <div class="swiper-slide h-auto pt-4 pb-5">
+                                <div class="w-100 h-100">
+                                    <div class="card h-100 border-0 shadow gradient-overlay">
+                                        <div class="card-img-top overflow-hidden ratio ratio-1x1">
+                                            <img class="img-fluid"
+                                                src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/paragliding-at-bhimtal_bQb7Zem_t.jpg"
+                                                alt="">
+                                            <div>
+                                                <div class="card-img-overlay-bottom z-index-20">
+                                                    <h4 class="text-white text-shadow mb-0">Paragliding at Bhimtal</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide h-auto pt-4 pb-5">
+                                <div class="w-100 h-100">
+                                    <div class="card h-100 border-0 shadow gradient-overlay">
+                                        <div class="card-img-top overflow-hidden ratio ratio-1x1">
+                                            <img class="img-fluid"
+                                                src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/boating-at-bhimtal_uRa9gVq_t.jpg"
+                                                alt="">
+                                            <div>
+                                                <div class="card-img-overlay-bottom z-index-20">
+                                                    <h4 class="text-white text-shadow mb-0">Boating at Bhimtal</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide h-auto pt-4 pb-5">
+                                <div class="w-100 h-100">
+                                    <div class="card h-100 border-0 shadow gradient-overlay">
+                                        <div class="card-img-top overflow-hidden ratio ratio-1x1">
+                                            <img class="img-fluid"
+                                                src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/waterfall_NZAuwcp_t.jpg"
+                                                alt="">
+                                            <div>
+                                                <div class="card-img-overlay-bottom z-index-20">
+                                                    <h4 class="text-white text-shadow mb-0">Bhalu Gaad Waterfall</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide h-auto pt-4 pb-5">
+                                <div class="w-100 h-100">
+                                    <div class="card h-100 border-0 shadow gradient-overlay">
+                                        <div class="card-img-top overflow-hidden ratio ratio-1x1">
+                                            <img class="img-fluid"
+                                                src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/village-walk_JfRzd5l_t.jpg"
+                                                alt="">
+                                            <div>
+                                                <div class="card-img-overlay-bottom z-index-20">
+                                                    <h4 class="text-white text-shadow mb-0">Village Walk</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide h-auto pt-4 pb-5">
+                                <div class="w-100 h-100">
+                                    <div class="card h-100 border-0 shadow gradient-overlay">
+                                        <div class="card-img-top overflow-hidden ratio ratio-1x1">
+                                            <img class="img-fluid"
+                                                src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/mukteshwar-temple_orOlKrX_t.jpg"
+                                                alt="">
+                                            <div>
+                                                <div class="card-img-overlay-bottom z-index-20">
+                                                    <h4 class="text-white text-shadow mb-0">Mukteshwar Temple</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide h-auto pt-4 pb-5">
+                                <div class="w-100 h-100">
+                                    <div class="card h-100 border-0 shadow gradient-overlay">
+                                        <div class="card-img-top overflow-hidden ratio ratio-1x1">
+                                            <img class="img-fluid"
+                                                src="https://da8qcmjpujrcg.cloudfront.net/media/marketplace/images/329/chauli-ki-jali_pyp01BZ_t.jpg"
+                                                alt="">
+                                            <div>
+                                                <div class="card-img-overlay-bottom z-index-20">
+                                                    <h4 class="text-white text-shadow mb-0">Chauli Ki Jali</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div> -->
+                        <!-- If we need pagination -->
+                        <!-- <div class="swiper-pagination"></div>
+                        <button class="swiper-button-prev-bottom btn btn-sm btn-outline-primary">
+                            <i class="fas fa-chevron-left"></i>Previous
+                        </button>
+                        <button class="swiper-button-next-bottom btn btn-sm btn-outline-primary">
+                            Next<i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </section> -->
+                
+                
+                
+                <!-- FAQ -->
+                <section class="text-block row">
+                    <div>
+                        <p class="subtitle text-secondary">Still not sure?</p>
+                        <h2 class="mb-4">Have More Questions?</h2>
+                    </div>
+                    <div id="faq" role="tablist">
+                        
+                        <div class="card border-0 shadow-sm mb-3">
+                            <div class="card-header bg-primary-100 border-0 py-0" id="ques-1" role="tab"><a
+                                    class="accordion-link btn-collapse collapsed" data-bs-toggle="collapse" href="#ans-1"
+                                    aria-expanded="false" aria-controls="ans-1">How to reach the venue?</a></div>
+                            <div class="collapse" id="ans-1" role="tabpanel" aria-labelledby="ques-1"
+                                data-bs-parent="#faq">
+                                <div class="card-body text-muted">
+                                    <p> Google maps link to the venue : <span style="text-decoration: underline;"><a href="https://goo.gl/maps/pXhWhrNTSDd4mbYP8">https://goo.gl/maps/pXhWhrNTSDd4mbYP8</a></span></p><p><strong>Festival Bus: </strong>Enjoy to and fro bus service from Delhi to the venue at a nominal price. Travel with the artists and get to know other attendees during our journey to the venue. You can book this option during checkout.</p><p><strong>Airports: </strong>You can take a flight to Pantnagar (Minor Airport) or Delhi.</p><p><strong>Train Stations: </strong>Kathgodam is the nearest train station. Taxis are easily available to reach Mukteshwar from Kathgodam.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card border-0 shadow-sm mb-3">
+                            <div class="card-header bg-primary-100 border-0 py-0" id="ques-2" role="tab"><a
+                                    class="accordion-link btn-collapse collapsed" data-bs-toggle="collapse" href="#ans-2"
+                                    aria-expanded="false" aria-controls="ans-2">What is the cancellation policy for the festival?</a></div>
+                            <div class="collapse" id="ans-2" role="tabpanel" aria-labelledby="ques-2"
+                                data-bs-parent="#faq">
+                                <div class="card-body text-muted">
+                                    <p>We totally understand that unforeseen circumstances might need you to change plans, and so our cancellation policy makes it easier to do that.</p><br><li>Cancellations prior to 30 days from the start of the trip <b>— full refund.</b></li>
+                                    <li>Cancellation between 30 days and 15 days to the start of the trip<b> — 50% refund.</b></li><li>Cancellation less than 15 days to the start of the trip <b>— no refund.</b></li><br><p>In case of unforeseen weather conditions, government restrictions or any other unavoidable circumstances beyond the control of the host, certain activities during the expedition or the event itself may be cancelled, or there could be change in the itinerary. In such cases, the host will try their best to provide an alternate feasible activity or a voucher will be handed over (in case of cancellation or rescheduling of event) to you. However no refund will be provided for the same.<p>In case the trip is cancelled by the host for lack of minimum number of people in the batch, you will get a full refund.</p></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+                
+                <!-- bottom extra padding -->
+                <section class="py-5">
+                </section>
+            </div>
+            <div class="col-lg-4 d-none d-lg-flex">
+                <!-- Booking sticky div -->
+                <section class="py-5">
+                    <div class="pt-4"></div>
+                    <div class="py-4 ps-5 sticky-top">
+                        <div class="p-4 shadow ms-lg-4 rounded sticky-top">
+                            
+                            <p class="mb-1"><del>Early Bird (₹3999) - Sold out</del></p>
+                            
+                            
+                            <h6 class="mb-3">11 Passes Left</h6>
+                            
+                            
+                            <p class="text-muted mb-0">
+                                
+                                
+                                <span class="text-primary h3 ms-1">₹4499</span>
+                                
+                                <span> per person</span>
+                            </p>
+                            
+                            
+                            <!-- <ul class="text-muted fw-light ps-4 mb-3 fa-ul-without-margin">
+                                
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Festival pass for both days</li>
+                                
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>All workshops</li>
+                                
+                            </ul> -->
+                            <br>
+                            
+                            <!-- <h6 class="mb-3">Dehradun to Dehradun</h6> -->
+                            
+                            <ul class="text-muted fw-light ps-4 mb-3">
+                                
+                                <li class="mb-3"><h6>Dehradun to dehradun</h6></li>
+                                
+                                <li class="mb-3"><h6>Delhi to Delhi</h6></li>
+                                
+                            </ul>
+                            
+                            <div class="alert alert-primary mb-4" role="alert">₹2000 discount for booking early. Only 30 early bird passes left!</div>
+                            <div class="d-grid mb-2">
+                                <a class="btn btn-primary" href="javascript:void(0)"
+                                    onclick="clicked_block_now();">Book now</a>
+                            </div>
+                            <p class="text-muted text-sm text-center">Book now, and pay upto 7 days later.</p>
+                            
+                            <hr class="my-3">
+                            <p class="text-muted fw-light text-center mb-0">Please call or whatsapp us at <br> <span
+                                    class="h6 text-primary">+91 9654533535</span> in
+                                case of any queries.</p>
+                            
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- Booking div mobile -->
+    <nav class="navbar fixed-bottom navbar-light bg-light shadow pt-0 pb-0 px-0 d-lg-none rounded-top hide-below"
+        id="mobile_cost_nav">
+        <div class="row text-center">
+            <div class="my-0 bg-gray-200 w-100 mb-3" style="height:1px"></div>
+            
+            <p class="mb-0"><del>Early Bird (₹3999) - Sold out</del></p>
+            
+            
+            <h6 class="mb-1">11 Passes Left</h6>
+            
+            
+            <p class="text-muted mb-0">
+                
+                
+                <span class="text-primary h3 ms-1">₹4499</span> per person
+            </p>
+            
+            
+            <div class="collapse pt-0 text-start px-4" id="mobile_cost_details">
+                
+                <!-- <p class="mb-0 fw-bolder">Dehradun to Dehradun</p> -->
+                <ul class="fw-light text-muted fa-ul-without-margin mb-2 ms-n2">
+                    
+                    
+                    <li class="mb-3"><h6>Dehradun to dehradun</h6></li>
+                                
+                    <li class="mb-3"><h6>Delhi to Delhi</h6></li>
+                    
+                </ul>
+                
+                
+                <!-- <p class="mb-0 fw-bolder">Delhi to Delhi</p> -->
+                <!-- <ul class="fw-light mb-4 ms-n2">
+                    
+                    <li>Accomodation - starts at ₹3500 per person</li>
+                    
+                    <li>Bus Tickets from Delhi and back - ₹3000 per person</li>
+                    
+                </ul> -->
+                
+                <div class="text-center mb-2">
+                    <a class="btn btn-primary" href="javascript:void(0)" onclick="clicked_block_now();">Block now!</a>
+                </div>
+                <p class="text-sm text-center">Block now, and pay upto 7 days later.</p>
+                
+                <hr class="my-3">
+                <p class="mb-2 text-center text-sm">Got questions before you book?</p>
+                <div class="row mb-2">
+                    <div class="col-6">
+                        <a class="btn btn-outline-primary w-100 btn-sm" href="javascript:void(0)"
+                            onclick="clicked_call('9654533535');"><i class="fas fa-phone-alt"></i> Call</a>
+                    </div>
+                    <div class="col-6">
+                        <a class="btn btn-outline-primary w-100 btn-sm" href="javascript:void(0)"
+                            onclick="clicked_whatsapp('9654533535');"><i class="fab fa-whatsapp" aria-hidden="true"></i> Whatsapp</a>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="btn btn-link btn-collapse ps-0 text-primary collapsed mt-n2" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mobile_cost_details" aria-expanded="false"
+                aria-controls="moreRules" data-expanded-text="Hide details" data-collapsed-text="Buy Tickets">Buy Tickets</button>
+            <!-- <div class="mb-0">
+                <button class="btn btn-primary btn-sm" type="submit">Show details</button>
+            </div> -->
+        </div>
+        <!-- <p style="position:absolute; bottom:4px" class="small mb-0 font-weight-bold">Early Bird Passes Sold Out!</p> -->
+    </nav>
+ <!-- JavaScript files-->
+ <script>
+    // ------------------------------------------------------- //
+    //   Inject SVG Sprite - 
+    //   see more here 
+    //   https://css-tricks.com/ajaxing-svg-sprite/
+    // ------------------------------------------------------ //
+    function injectSvgSprite(path) {
+
+        var ajax = new XMLHttpRequest();
+        ajax.open("GET", path, true);
+        ajax.send();
+        ajax.onload = function (e) {
+            var div = document.createElement("div");
+            div.className = 'd-none';
+            div.innerHTML = ajax.responseText;
+            document.body.insertBefore(div, document.body.childNodes[0]);
+        }
+    }
+    // to avoid CORS issues when viewing using file:// protocol, using the demo URL for the SVG sprite
+    // use your own URL in production, please :)
+    // https://demo.bootstrapious.com/directory/1-0/icons/orion-svg-sprite.svg
+    //- injectSvgSprite('${path}icons/orion-svg-sprite.69651a96.svg'); 
+    injectSvgSprite('https://demo.bootstrapious.com/directory/1-4/icons/orion-svg-sprite.svg');
+
+</script>
+<script type="text/javascript" crossorigin="anonymous" src="https://da8qcmjpujrcg.cloudfront.net/static/CACHE_V2/js/bootstrapious.1c98cb0986bf.js"></script>
+
+<script type="text/javascript" crossorigin="anonymous" src="https://da8qcmjpujrcg.cloudfront.net/static/CACHE_V2/js/experiences.fb45c2669203.js"></script>
+
+<script>
+    var pledge_url = "/booking/pledge/332/";
+
+    var fake_reserve_data = {
+        'id': '332',
+        'name': 'Manzar-E-Aam',
+        'category': 'Experiences/Music', 
+    'brand': 'Manzar-E-Aam',
+        'price': '3999',
+            'quantity': 1,
+                'value': 1,
+                    'currency': 'INR',
+                        'marketing_trip_type': "['music_event']",
+                            'duration': 3,
+    'duration_unit': 1
+        }
+
+    var track_product_data = {
+        'id': '332',
+        'name': 'Manzar-E-Aam',
+        'category': 'Experiences/Music', 
+    'brand': 'Manzar-E-Aam',
+        'price': '3999',
+            'value': 3999,
+    'currency': 'INR',
+        'marketing_trip_type': "['music_event']",
+            'duration': 3,
+    'duration_unit': 1
+        }
+
+    trackProductView(track_product_data);
+    ga('send', 'pageview');
+
+    if (findGetParameter("utm_source") === "host_invite") {
+        trackFakeReserved(fake_reserve_data);
+    }
+
+
+    function clicked_block_now() {
+        trackMarketplaceConversion(1, 'exp_booking_trigger_block_now');
+        window.location = pledge_url;
+    }
+
+    function clicked_whatsapp(number) {
+        trackMarketplaceConversion(1, 'exp_booking_trigger_whatsapp_host');
+        window.location = "https://wa.me/91" + number;
+    }
+
+    function clicked_call(number) {
+        trackMarketplaceConversion(1, 'exp_booking_trigger_call_host');
+        window.location = "tel:+91" + number;
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        el_autohide = document.querySelector('#mobile_cost_nav');
+        if (el_autohide) {
+            var last_scroll_top = 0;
+            var offset_value = screen.width / 2;
+
+            window.addEventListener('scroll', function () {
+                let scroll_top = window.scrollY;
+                if (scroll_top > offset_value && last_scroll_top < offset_value) {
+                    el_autohide.classList.remove('hide-below');
+                    el_autohide.classList.add('show-below');
+                    console.log("showing price");
+                    console.log("scroll_top", scroll_top);
+                    console.log("offset_value", offset_value);
+                    console.log("last_scroll_top", last_scroll_top);
+                }
+
+                if (scroll_top < offset_value && last_scroll_top > offset_value) {
+                    el_autohide.classList.remove('show-below');
+                    el_autohide.classList.add('hide-below');
+                    console.log("hiding price");
+                    console.log("scroll_top", scroll_top);
+                    console.log("offset_value", offset_value);
+                    console.log("last_scroll_top", last_scroll_top);
+                }
+                last_scroll_top = scroll_top;
+            });
+            // window.addEventListener
+        }
+        // if
+
+    });
+</script>
+
+<script>
+  // 2. This code loads the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // 3. This function creates an <iframe> (and YouTube player)
+  //    after the API code downloads.
+  var player;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('hero_video_player', {
+      videoId: "RequC9T9rWk",
+      playerVars : {
+          'start':3,
+      },
+      events: {
+        'onReady': onPlayerReady,
+        'onStateChange': onPlayerStateChange
+      }
+    });
+  }
+
+  // 4. The API will call this function when the video player is ready.
+  function onPlayerReady(event) {
+      var hero_video = document.getElementById('hero_video');
+      hero_video.classList.remove('d-none');
+    //   setTimeout(playvideo(event),100);
+  }
+  function playvideo(event){
+      event.target.playVideo();
+  }
+
+  // 5. The API calls this function when the player's state changes.
+  //    The function indicates that when playing a video (state=1),
+  //    the player should play for six seconds and then stop.
+  var done = false;
+  function onPlayerStateChange(event) {
+  if (event.data == YT.PlayerState.PLAYING) {
+  }
+  else{
+  }
+}
+</script>
+
+<script src="/js/index.js"></script>
+
+
+</body>
+</html>
